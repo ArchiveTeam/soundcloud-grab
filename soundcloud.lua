@@ -126,7 +126,10 @@ wget.callbacks.get_urls = function(file, url, is_css, iri)
     end
   end
   
-  if allowed(url, nil) then
+  if allowed(url, nil) and not
+     (string.match(url, "playlists_without_albums")
+      or string.match(url, "likers")
+      or string.match(url, "reposters")) then
     html = read_file(file)
     for newurl in string.gmatch(html, '([^"]+)') do
       checknewurl(newurl)
