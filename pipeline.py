@@ -58,7 +58,7 @@ if not WGET_LUA:
 #
 # Update this each time you make a non-cosmetic change.
 # It will be added to the WARC files and reported to the tracker.
-VERSION = "20170718.01"
+VERSION = "20170718.02"
 USER_AGENT = 'ArchiveTeam'
 TRACKER_ID = 'soundcloud'
 TRACKER_HOST = 'tracker.archiveteam.org'
@@ -238,8 +238,7 @@ project = Project(
     project_html = """
     <img class="project-logo" alt="logo" src="http://archiveteam.org/images/thumb/6/6f/Soundcloud_logo.png/320px-Soundcloud_logo.png" />
     <h2>soundcloud.com <span class="links"><a href="http://soundcloud.com/">Website</a> &middot; <a href="http://tracker.archiveteam.org/soundcloud/">Leaderboard</a></span></h2>
-    """,
-    utc_deadline = datetime.datetime(2017, 6, 23, 23, 59, 0)
+    """
 )
 
 pipeline = Pipeline(
