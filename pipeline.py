@@ -58,8 +58,8 @@ if not WGET_LUA:
 #
 # Update this each time you make a non-cosmetic change.
 # It will be added to the WARC files and reported to the tracker.
-VERSION = "20170718.03"
-USER_AGENT = 'ArchiveTeam'
+VERSION = "20170719.01"
+USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
 TRACKER_ID = 'soundcloud'
 TRACKER_HOST = 'tracker.archiveteam.org'
 
